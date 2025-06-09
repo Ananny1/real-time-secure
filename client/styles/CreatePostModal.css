@@ -1,0 +1,148 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.22);
+    min-width: 360px;
+    max-width: 95vw;
+    min-height: 340px;
+    /* taller modal */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* center vertically */
+    gap: 18px;
+    padding: 36px 32px 28px 32px;
+    /* more vertical space */
+}
+
+.modal h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #1c1e21;
+    letter-spacing: -0.5px;
+    text-align: left;
+}
+
+.modal form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    height: 100%;
+    /* force vertical stretch */
+}
+
+.modal input[type="text"],
+.modal textarea {
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    padding: 12px 10px;
+    font-size: 1rem;
+    width: 100%;
+    background: #f0f2f5;
+    margin-bottom: 4px;
+    resize: none;
+    transition: border 0.18s;
+     margin-left: -8px; /* Adjust the value as you like */
+}
+
+
+.modal textarea {
+    min-height: 110px;
+    /* taller textarea */
+    max-height: 260px;
+}
+
+
+.modal .modal-actions {
+  display: flex;
+  justify-content: flex-start; /* or flex-end if you want right-aligned */
+  gap: 14px;   /* <- controls the space between buttons, adjust as you like */
+  margin-top: 14px; /* optional */
+}
+
+.modal button[type="submit"] {
+    width: 90px;
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 8px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal button[type="submit"]:hover {
+    background: #166fe5;
+}
+
+.modal button[type="button"] {
+    background: transparent;
+    color: #65676b;
+    border: 1px solid #ccd0d5;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.modal button[type="button"]:hover {
+    background: #f0f2f5;
+    border-color: #b0b3b8;
+}
+.file-section {
+  margin: 12px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.file-label {
+  font-weight: 600;
+  color: #6666bb;
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+input[type="file"] {
+  border: none;
+  padding: 0;
+  background: none;
+  color: #222b45;
+}
+.image-preview {
+  margin-top: 8px;
+  max-width: 220px;
+  max-height: 170px;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(110,110,140,0.09);
+  object-fit: cover;
+}
+
+
+@media (max-width: 500px) {
+    .modal .modal-actions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .modal button {
+        width: 100%;
+    }
+}

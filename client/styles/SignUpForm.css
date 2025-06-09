@@ -1,0 +1,105 @@
+.form-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 34px 30px 26px 30px;
+  background: #fff;
+  color: #3e3e3e;
+  border-radius: 18px;
+  box-shadow: 0 2px 32px rgba(220, 39, 67, 0.13), 0 1.5px 7px rgba(44,44,44,0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 2rem;
+  font-family: 'Grand Hotel', cursive, Arial, sans-serif;
+  color: #bc1888;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+.form-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-container input,
+.form-container select {
+  padding: 12px;
+  border: 1.5px solid #f2b5da;
+  border-radius: 8px;
+  background: #fdf6fa;
+  color: #36243a;
+  font-size: 16px;
+  margin-bottom: 2px;
+  transition: border 0.16s;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  outline: none;
+  border: 1.5px solid #cc2366;
+  background: #fff;
+  box-shadow: 0 0 0 2px #f09433;
+}
+
+.form-container input::placeholder {
+  color: #b9b8be;
+  letter-spacing: 0.3px;
+}
+
+.form-container button {
+  padding: 12px;
+  background: linear-gradient(90deg, #fd5949 0%, #d6249f 80%, #285AEB 100%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(220, 39, 67, 0.08);
+  cursor: pointer;
+  margin-top: 8px;
+  letter-spacing: 0.7px;
+  transition: background 0.18s, transform 0.17s;
+}
+
+.form-container button:hover {
+  background: linear-gradient(90deg, #fd5949 10%, #d6249f 90%, #285AEB 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.form-container p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 15px;
+  color: #a197b2;
+}
+
+.form-container a {
+  color: #d6249f;
+  text-decoration: underline;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.15s;
+}
+
+.form-container a:hover {
+  color: #fd5949;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+@media (max-width: 500px) {
+  .form-container {
+    margin: 38px 8px;
+    padding: 16px 7px 10px 7px;
+    border-radius: 13px;
+  }
+}

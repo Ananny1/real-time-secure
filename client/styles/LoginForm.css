@@ -1,0 +1,129 @@
+/* Wrapper for centering the form */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Instagram gradient background */
+  /* background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); */
+  padding: 20px;
+}
+
+/* Form container with Instagram vibe */
+.login-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 36px 30px 28px 30px;
+  background: #fff;
+  color: #3e3e3e;
+  border-radius: 18px;
+  box-shadow: 0 2px 28px rgba(60, 50, 100, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 2rem;
+  font-family: 'Grand Hotel', cursive, Arial, sans-serif;
+  color: #bc1888;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+}
+
+/* Subtle Instagram logo circle (optional) */
+.login-logo {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-radius: 50%;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.login-container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-container input {
+  padding: 12px;
+  border: 1.5px solid #e8e8e8;
+  border-radius: 7px;
+  background: #fafafa;
+  color: #22223b;
+  font-size: 16px;
+  margin-bottom: 4px;
+  transition: border 0.19s;
+}
+
+.login-container input:focus {
+  outline: none;
+  border: 1.5px solid #cc2366;
+  background: #fff;
+  box-shadow: 0 0 0 2px #f09433;
+}
+
+.login-container input::placeholder {
+  color: #b9b8be;
+  letter-spacing: 0.5px;
+}
+
+.login-container button {
+  padding: 12px;
+  background: linear-gradient(90deg, #fd5949 0%, #d6249f 80%, #285AEB 100%);
+  border: none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(204,35,102,0.09);
+  cursor: pointer;
+  margin-top: 6px;
+  letter-spacing: 0.7px;
+  transition: background 0.28s, transform 0.18s;
+}
+
+.login-container button:hover {
+  background: linear-gradient(90deg, #fd5949 15%, #d6249f 85%, #285AEB 100%);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.login-container p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #a197b2;
+}
+
+.login-container a {
+  color: #d6249f;
+  text-decoration: underline;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: color 0.15s;
+}
+
+.login-container a:hover {
+  color: #fd5949;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+@media (max-width: 500px) {
+  .login-container {
+    margin: 40px 7px;
+    padding: 16px 7px 10px 7px;
+    border-radius: 13px;
+  }
+}
